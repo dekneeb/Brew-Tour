@@ -6,7 +6,7 @@ function Home(){
         <nav></nav>
         <h1>🏖 Sunday Funday 🏖</h1>
         
-       <Link to='/breweries' >All Breweries List</Link>
+       <Link to='/breweries' >View Your Passport</Link>
        <Link to='/search' >Search Breweries</Link>
         
         </div>)
