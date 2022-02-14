@@ -43,7 +43,7 @@ function Search(){
 
     return(<div>
 
-        <h1>🏖 Search All Breweries 🏖</h1>
+        <h1>🍻 Search All Breweries 🍻</h1>
 
         <section>
             <form onSubmit={Submit} >

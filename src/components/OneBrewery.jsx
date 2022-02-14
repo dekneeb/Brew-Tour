@@ -10,7 +10,7 @@ function OneBrewery(props){
     const [oneBrew, setOneBrew] = useState({})
 
     const brew = useParams()
-    console.log(brew.id)
+    // console.log(brew.id)
 
     const URL = `https://api.openbrewerydb.org/breweries/${brew.id}`
 

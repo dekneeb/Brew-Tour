@@ -4,7 +4,7 @@ function Home(){
     return(<div> 
 
         <nav></nav>
-        <h1>🏖 Sunday Funday 🏖</h1>
+        <h1>🍻Brew Tour🍻</h1>
         
        <Link to='/breweries' >View Your Passport</Link>
        <Link to='/search' >Search Breweries</Link>
