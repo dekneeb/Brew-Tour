@@ -6,10 +6,10 @@ import OneBrewery from './components/OneBrewery';
 import Home from './components/Home';
 import {Routes, Route, Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import Login from './components/Login'
+import Navbar from './components/Nav'
 
 
-
+// import Login from './components/Login'
 
 function App() {
 
@@ -27,26 +27,12 @@ function App() {
 
       localStorage.setItem("addedStamps", addedStamps)
 
-
     })
-
- 
-
- 
-
-  // function storage(){
-  //   const state = localStorage.getItem("addedStamps");
-  //   if (addedStamps) setAddedStamps({addedStamps : JSON.parse(addedStamps)})
-  // }
-  // storage()
-
- 
-
-
 
 
   return (
     <div className="App">
+       <Navbar />
       <Routes>
      <Route path='/' element={<Home/>} />
      <Route path='/home' element={<Home/>} />

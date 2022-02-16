@@ -1,0 +1,43 @@
+.card{
+
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(190, 188, 188);
+}
+.card:hover{
+    box-shadow: 10px 10px 10px black;
+}
+
+.banner{
+    
+}
+
+body{
+    background-color: rgb(54, 54, 54);
+}
+
+p{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+h3{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: rgb(250, 246, 246);
+}
+h4{
+    color: white;
+    margin-top: 75px;
+}
+h2{
+    color: white;
+    font-size: 5vw;
+}
+h1{
+    font-size: 8vw;
+}
+
+

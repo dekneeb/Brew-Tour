@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
+import '../onebrew.css'
 
 
 function OneBrewery(props){
@@ -31,11 +32,11 @@ function OneBrewery(props){
     
 
 
-    return(<div>
+    return(<div key={brew.id}>
         
-       
-
-        <h1>{oneBrew.name}</h1>
+       <div className='table'>
+        <section className='container_onebrew'>
+        <h2 className ='oneBrew_title'>{oneBrew.name}</h2>
         <p>Brew Type: {oneBrew.brewery_type}</p>
         <p>Phone number: {oneBrew.phone}</p>
         <a href={`${oneBrew.website_url}`}>{oneBrew.name} website</a> 
@@ -43,11 +44,14 @@ function OneBrewery(props){
         <p>{oneBrew.street}</p>
         <p> {oneBrew.city}, {oneBrew.state} {oneBrew.postal_code}</p>
         </a>
-
-        <p> Visited this brewery already? Add a stamp to your passport!</p>
+        </section>
+        </div><br/><br/>
+        <section className='stamp_onebrew'>
+        <p className='visited'> Visited this brewery already? Add a stamp to your passport!</p>
         <label htmlFor='stamp'>
-        <input onClick={() => props.addStamp(oneBrew.name)} type='button' id='stamp' name='stamp' value='Stamp it!'></input>
+        <input onClick={() => props.addStamp(oneBrew.id)} type='button' className ='stampbutton' id='stamp' name='stamp' value='Stamp it!'></input>
         </label>
+        </section>
 
     </div>)
 }

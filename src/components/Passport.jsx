@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import '../Passport.css'
 import {Link} from 'react-router-dom'
 
 function Passport(props){
@@ -6,35 +6,30 @@ function Passport(props){
     console.log(props.addedStamps)
 
     return(<div>
-        <h1>  Passport Stamps 🛫 </h1>
-
-        <section>
+        <h2 className='french'>  Passport Stamps 🛫 </h2>
+     
+        <section  className='brew_list'>
 
             {props.addedStamps.map(brew=>{
-                return (<ul><li>{brew}</li></ul>)
+            
+                
+                const split = brew.split('-')
+                console.log(split)
+                // for(let i=0; i<split.length; i++){
+                //     console.log(split[i])
+                for(let i=0; i<split.length; i++){
+                    // console.log(split[i])
+                split[i] = split[i][0].toUpperCase()+ split[i].slice(1)
+                
+                  }
+                 const title = split.join(" ")
+
+                    return (<ul><div className='card_stamp'><li key={brew}> <Link to={`/search/${brew}`}> <p className='brew_title'> {title}</p></Link> </li></div></ul>)   
+               
             })}
         </section>
-            
-       
-
-       
-
       
     </div>)
 }
 
 export default Passport
-
-
-
-
-// {props.addedStamps.map((oneStamp, index)=>{
-           
-//     return(<li
-//     key={index}>
-
-//        {/* <Link to={`/search/${oneStamp}`}>{oneStamp}</Link> */}
-//        {oneStamp}
-        
-//     </li>)
-// })} 

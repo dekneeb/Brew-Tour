@@ -1,0 +1,64 @@
+
+.card_stamp{
+ 
+  background-image: url('./images/passportblank.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 200px;
+  box-shadow: rgba(236, 193, 181, 0.801) 0px 7px 29px 0px;
+ 
+}
+
+.card_stamp:hover{
+    box-shadow: rgba(114, 90, 83, 0.801) 0px 7px 29px 0px;
+
+}
+li{
+    list-style: none;
+}
+
+
+.brew_title{
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    
+    
+
+}
+
+.brew_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+    flex-direction: row;
+    align-items: stretch;
+    
+}
+
+.french{
+    font-family: 'Dancing-Script';
+}
+
+@media all and (max-width: 768px){
+    .list{
+      width: 49%;
+      margin-bottom: 3rem;
+    }
+  }
+  @media all and (max-width: 480px){
+    .list{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+

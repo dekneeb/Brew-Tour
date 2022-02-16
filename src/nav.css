@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    padding: 5px;
+    height: 2vw;
+    border: 1 px solid black;
+    margin-top: 0;
+    
+  }
+
+  .navbar a{
+      color: white;
+      /* font-weight: bold; */
+      /* -webkit-text-stroke-width: 2px; */
+        /* -webkit-text-stroke-color: rgb(230, 182, 23); */
+        font-size: 18px;
+      text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 10px;
+  }
+

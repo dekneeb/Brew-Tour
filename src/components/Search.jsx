@@ -1,28 +1,22 @@
 import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
-
+import '../search.css'
 
 function Search(){
     
     const [List, setList] = useState ([])
     const [state, setState] = useState ()
     const [city, setCity] = useState ()
-    // const URL = `https://api.openbrewerydb.org/breweries/search?query=${query}`
-    const URL = `https://api.openbrewerydb.org/breweries?by_city=${city}&by_state=${state}`
+    const URL = `https://api.openbrewerydb.org/breweries?by_city=${city}&by_state=${state}&per_page=50`
 
     const handleFetch = ()=>{
         fetch(URL)
         .then(resp => resp.json())
         .then((json)=>{
-            // console.log(json)
+            console.log(json)
             setList(json)
         })
     }
-
-    // useEffect(()=>{
-    //     handleFetch()
-    // }, [])
-
 
   const SearchState =(e) =>{
         console.log(e.target.value)
@@ -40,24 +34,29 @@ function Search(){
        
    }
     
+    return(<div className='all'>
 
-    return(<div>
+     
+        
 
-        <h1>🍻 Search All Breweries 🍻</h1>
-
-        <section>
+        <section className='form'>
+        <h2>🍻 Search All Breweries 🍻</h2>
             <form onSubmit={Submit} >
                 <input type='text' name='query' onChange={SearchCity} placeholder ='city'></input>
-                <input type='text' name='query' onChange={SearchState} placeholder ='state'></input>
-                <input  type='submit' value='Cheers! 🍻'></input>
+                <input type='text' name='query' onChange={SearchState} placeholder ='state'></input><br/>
+       
+                <input className='button' type='submit' value='Cheers! 🍻'></input>
             </form>
-            
-            </section>  
-            <section >
+            </section> 
+         
+            <section className='breweries' >
 
                 {List.map(list =>{
                     return(
-                       <Link to={`/search/${list.id}`}> <p> {list.name}</p></Link> 
+                        <div ><ul>
+                       <Link to={`/search/${list.id}`}> <li className='title'> {list.name}</li></Link>
+                       </ul> 
+                       </div>
                     )
                 })}
              

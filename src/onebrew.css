@@ -1,0 +1,50 @@
+p{
+    color: rgb(245, 241, 241);
+}
+
+.oneBrew_title{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+}
+
+.container_onebrew{
+    background-image: url('./images/table2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin: 0 auto
+}
+
+h1{
+    text-shadow: -1px 4px 0 rgb(10, 10, 10);
+}
+
+.visited{
+    color: red;
+}
+
+.stampbutton{
+    color: blue;
+}
+
+.stamp_onebrew{
+   
+}
