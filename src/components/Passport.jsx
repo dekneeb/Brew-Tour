@@ -12,19 +12,25 @@ function Passport(props){
 
             {props.addedStamps.map(brew=>{
             
-                
-                // const split = brew.split('-')
-                // console.log(split)
-                // // for(let i=0; i<split.length; i++){
-                // //     console.log(split[i])
+                if(brew == []){
+                    return (<ul key={props.addedStamps}><div className='card_stamp' ><li> <Link to={`/search/${brew}`}> <p className='brew_title'> {brew}</p></Link> </li></div></ul>) 
+                }else{
+                const split = brew.split('-')
+                console.log(split)
                 // for(let i=0; i<split.length; i++){
-                //     // console.log(split[i])
-                // split[i] = split[i][0].toUpperCase()+ split[i].slice(1)
+                //     console.log(split[i])
+                for(let i=0; i<split.length; i++){
+                    // console.log(split[i])
+                split[i] = split[i][0].toUpperCase()+ split[i].slice(1)
                 
-                //   }
-                //  const title = split.join(" ")
+                  }
+                 const title = split.join(" ")
 
-                    return (<ul><div className='card_stamp'><li key={brew}> <Link to={`/search/${brew}`}> <p className='brew_title'> {brew}</p></Link> </li></div></ul>)   
+                 return (<ul key={props.addedStamps}><div className='card_stamp' ><li key={brew}> <Link to={`/search/${brew}`}> <p className='brew_title'> {title}</p></Link> </li></div></ul>) 
+
+                }
+
+                      
                
             })}
         </section>
