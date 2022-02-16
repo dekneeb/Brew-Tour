@@ -20,7 +20,7 @@ p{
     align-items: center;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-top: 60px;
+    margin-top: 90px;
     border-radius: 5px;
 }
 
@@ -41,17 +41,27 @@ h1{
 
 .visited{
     color: rgb(65, 5, 88);
+    margin-top: 90px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .stampbutton{
-    background-color: white;
-    color: black;
-    
+    background-color: rgb(248, 246, 246);
+    color: rgb(20, 20, 20);
 
 }
+.stampbutton:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #e2c95a;
+       -moz-box-shadow: inset 0px 0px 5px #e9c449;
+            box-shadow: inset 0px 0px 5px #e6c847;
+     outline: none;
+  }
 
 .stampbutton:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(170, 168, 168);
+    color: rgb(15, 15, 15);
+    cursor: pointer;
    
 }

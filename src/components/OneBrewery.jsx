@@ -28,6 +28,11 @@ function OneBrewery(props){
 
     console.log(oneBrew)
 
+
+    const notify = () =>{
+        document.getElementById('empty').innerText = "Stamped!"
+
+    }
    
     
 
@@ -51,6 +56,7 @@ function OneBrewery(props){
         <label htmlFor='stamp'>
         <input onClick={() => props.addStamp(oneBrew.id)} type='button' className ='stampbutton' id='stamp' name='stamp' value='Stamp it!'></input>
         </label>
+        <div className='empty'></div>
         </section>
 
     </div>)
