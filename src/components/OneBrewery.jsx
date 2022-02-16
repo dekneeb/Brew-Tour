@@ -52,7 +52,8 @@ function OneBrewery(props){
         </section>
         </div><br/><br/>
         <section className='stamp_onebrew'>
-        <p className='visited'> Visited this brewery already? Add a stamp to your passport!</p>
+            <div className='top'>
+        <p className='visited'> Visited this brewery already? Add a stamp to your passport!</p></div>
         <label htmlFor='stamp'>
         <input onClick={() => props.addStamp(oneBrew.id)} type='button' className ='stampbutton' id='stamp' name='stamp' value='Stamp it!'></input>
         </label>

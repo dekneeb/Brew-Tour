@@ -40,10 +40,18 @@ h1{
 }
 
 .visited{
-    color: rgb(65, 5, 88);
+    color: rgb(65, 5, 88);    
     margin-top: 90px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.top{
+    background-color: rgba(255, 255, 255, 0.575);
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 5px;
+   
+
 }
 
 .stampbutton{
