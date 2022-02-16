@@ -53,7 +53,7 @@ function Search(){
 
                 {List.map(list =>{
                     return(
-                        <div ><ul>
+                        <div key={list.id}><ul >
                        <Link to={`/search/${list.id}`}> <li className='title'> {list.name}</li></Link>
                        </ul> 
                        </div>

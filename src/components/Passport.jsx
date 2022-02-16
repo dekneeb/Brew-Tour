@@ -13,8 +13,12 @@ function Passport(props){
             {props.addedStamps.map(brew=>{
             
                 if(brew == []){
-                    return (<ul key={props.addedStamps}><div className='card_stamp' ><li> <Link to={`/search/${brew}`}> <p className='brew_title'> {brew}</p></Link> </li></div></ul>) 
+                    return ( null
+                    // <ul key={props.addedStamps}><div className='card_stamp' ><li> <Link to={`/search/${brew}`}> <p className='brew_title'> {brew}</p></Link> </li></div></ul>
+                    ) 
                 }else{
+                    
+
                 const split = brew.split('-')
                 console.log(split)
                 // for(let i=0; i<split.length; i++){
@@ -26,7 +30,7 @@ function Passport(props){
                   }
                  const title = split.join(" ")
 
-                 return (<ul key={props.addedStamps}><div className='card_stamp' ><li key={brew}> <Link to={`/search/${brew}`}> <p className='brew_title'> {title}</p></Link> </li></div></ul>) 
+                 return (<ul key={brew}><div className='card_stamp' ><li key={brew}> <Link to={`/search/${brew}`}> <p className='brew_title'> {title}</p></Link> </li></div></ul>) 
 
                 }
 
