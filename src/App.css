@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  background-color: orange;
+  margin-bottom: 20px;
+  border: 1px solid orange;
+
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  background-color: rgb(255, 217, 0);
+}
+
+h1{
+  color: rgb(0, 225, 255);
+}
+
