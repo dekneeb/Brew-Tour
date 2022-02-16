@@ -13,7 +13,9 @@ import Navbar from './components/Nav'
 
 function App() {
 
-  const passportList = [...localStorage.getItem('addedStamps').split(",")]
+  const stamps = localStorage.getItem('addedStamps')
+
+  const passportList = stamps ? [...localStorage.getItem('addedStamps').split(",")]: null 
 
   const [addedStamps, setAddedStamps] = useState(passportList || [])
 
