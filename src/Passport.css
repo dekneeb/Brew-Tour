@@ -34,6 +34,7 @@ li{
 
 }
 
+
 .brew_list{
     display: flex;
     flex-wrap: wrap;
@@ -42,11 +43,19 @@ li{
     margin-right: 10px;
     flex-direction: row;
     align-items: stretch;
+    margin-top: 30px;
+    
     
 }
 
-.french{
-    font-family: 'Dancing-Script';
+
+.passport_gif{
+  width: 20vw;
+  height: 15vw;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
 }
 
 @media all and (max-width: 768px){

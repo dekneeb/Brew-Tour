@@ -6,7 +6,10 @@ function Passport(props){
     console.log(props.addedStamps)
 
     return(<div>
-        <h2 className='french'>  Passport Stamps 🛫 </h2>
+         <h2 className='french'> Where to next?  </h2>
+         <img className='passport_gif' src={'https://c.tenor.com/ft2mQFVUR00AAAAC/fly-plane.gif'}/>
+        <p> On your way to collect more stamps^</p>
+       
      
         <section  className='brew_list'>
 
@@ -38,6 +41,8 @@ function Passport(props){
                
             })}
         </section>
+
+       
       
     </div>)
 }

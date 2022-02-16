@@ -4,20 +4,27 @@
     height: 20vw;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgb(190, 188, 188);
+    background-size: cover;
 }
 .card:hover{
     box-shadow: 10px 10px 10px black;
 }
 
-.banner{
-    
+.gif{
+    background-image: url('https://acegif.com/wp-content/gif/beer-61.gif');
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(190, 188, 188);
+    background-size: cover;
+    color: rgb(240, 168, 180);
 }
 
 body{
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(148, 209, 148);
 }
 
-p{
+.p{
     display: flex;
     justify-content: space-evenly;
 }

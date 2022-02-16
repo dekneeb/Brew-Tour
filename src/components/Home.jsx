@@ -28,8 +28,8 @@ function Home(){
         <h3>A place explore all breweries your city has to offer.</h3>
        
         </section>
-            <p><Link to='/breweries' ><img className="card" src={require('../images/passport.png')}></img></Link>
-            <Link to='/search' ><img className='card' src={require('../images/beersearch.png')}></img></Link></p><br/>
+            <section className='p'><Link to='/breweries' ><img className="card" src={require('../images/passport.png')}></img></Link>
+            <Link to='/search' ><p className='gif'>Search Breweries </p></Link></section><br/>
             <h4>Fun Fact: {fact}</h4><br/>
    
             
