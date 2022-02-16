@@ -12,7 +12,7 @@ function Passport(props){
 
             {props.addedStamps.map(brew=>{
             
-                if(brew == []){
+                if(brew.length == 0){
                     return ( null
                     // <ul key={props.addedStamps}><div className='card_stamp' ><li> <Link to={`/search/${brew}`}> <p className='brew_title'> {brew}</p></Link> </li></div></ul>
                     ) 
