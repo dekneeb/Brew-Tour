@@ -21,7 +21,7 @@ function Home(){
     }, [])
 
 
-    return(<div> 
+    return(<div className='background'> 
 
         <section className='banner'>
         <h1>🍻Brew Tour🍻</h1>

@@ -23,6 +23,13 @@ li{
     list-style: none;
 }
 
+body{
+    background-image: url('../src/images/patiotable.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 .brew_title{
     color: rgb(8, 8, 8);
@@ -32,6 +39,11 @@ li{
     
     
 
+}
+
+.pass_container{
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
 }
 
 

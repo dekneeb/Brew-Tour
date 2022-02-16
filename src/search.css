@@ -1,8 +1,6 @@
 
 .form{
-    background-image: url('../src/images/concretewall.jpg');
-    background-size: cover;
-    background-repeat: none;
+    background-color: rgba(0, 0, 0, 0.336);
 }
 a{
     text-decoration: none;
@@ -13,6 +11,7 @@ a{
     font-weight: bold;
     text-shadow: -1px 1px 0 #000;
     background-image: url('../src/images/download-4.jpg');
+    
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;

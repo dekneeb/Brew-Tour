@@ -10,6 +10,7 @@
     box-shadow: 10px 10px 10px black;
 }
 
+
 .gif{
     background-image: url('https://acegif.com/wp-content/gif/beer-61.gif');
     width: 20vw;
@@ -20,9 +21,12 @@
     color: rgb(240, 168, 180);
 }
 
-body{
-    background-color: rgb(148, 209, 148);
+.gif:hover{
+    box-shadow: 10px 10px 10px black;
+
 }
+
+
 
 .p{
     display: flex;
@@ -31,13 +35,16 @@ body{
 
 
 h3{
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 50px;
-    color: rgb(250, 246, 246);
+    color: rgb(247, 244, 244);
+    
+
 }
 h4{
-    color: white;
+    color: rgb(99, 96, 96);
     margin-top: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 h2{
     color: white;
@@ -45,6 +52,7 @@ h2{
 }
 h1{
     font-size: 8vw;
+    margin-bottom: 0;
 }
 
 
